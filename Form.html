@@ -14,15 +14,15 @@
                     <!--Text field's with limited Characters-->
                 
             <label for="First_Name" limit="30">First Name:</label><br>
-            <input type="text" id="name" name="user_name">
+            <input type="text" id="name" name="user_name"><br>
             <label for="last_name" limit="30">Last Name:</label><br>
-            <input type="text" id="name" name="user_name">
-            <label for="user_email" limit="50">Contact Email</label><br>
-            <input type="text" id="Email" name="user_email">
+            <input type="text" id="name" name="user_name"><br>
+            <label for="user_email" limit="50">Contact Email:</label><br>
+            <input type="text" id="Email" name="user_email"><br>
 
                        <!--Standrd Text Field no limit-->
 
-            <label>Contact Phone Number:</label>
+            <label>Contact Phone Number:</label><br>
             <input type="text"><br>
 
                               <!--Radio Button-->
@@ -38,7 +38,19 @@
 
         <fieldset>
           
-            <label for="hear_about_us">How did you hear aboout us?:</label>
+           
+          
+            <legend>Intrest For Contacting:</legend>
+            <input type="checkbox" id="construction" value="construction" name="field_construction">
+            <label for="construction">Construction</label><br>
+            <input type="checkbox" id="web_developer" value="web_developer" name="field_web_developer">
+            <label for="web_developer">Web Development</label><br>
+            <input type="checkbox" id="music" value="music" name="field_music">
+            <label for="music">Audio Engineer/Studio Musician</label><br>
+        </fieldset>
+        
+        <fieldset>
+        <legend for="hear_about_us">How did you hear aboout us?:</legend>
             <select id="hear_about_us" name="user-about">
               <optgroup label="Search Engine">
                 <option value="Google">Google</option>
@@ -57,25 +69,15 @@
               <optgroup label="Recruiter">
                 <option value="Teacher">Teacher</option>
                 <option value="student">Student</option><br>
-                <label for="name_of_reference">Name Of Reference</label>
-                <input type="text" id="name_of_reference" value="name_of_reference" name="ref_name">
               </optgroup> 
-            </select>
-          
-            <label>Intrest For Contacting:</label>
-            <input type="checkbox" id="construction" value="construction" name="field_construction">
-            <label for="construction">Construction</label><br>
-            <input type="checkbox" id="web_developer" value="web_developer" name="field_web_developer">
-            <label for="web_developer">Web Development</label><br>
-            <input type="checkbox" id="music" value="music" name="field_music">
-            <label for="music">Audio Engineer/Studio Musician</label><br>
-        </fieldset>
+            </select><br>
 
-        <label for="message">Feel Free To Leave A Message:</label>
+        <label for="message">Feel Free To Leave A Message:</label><br>
         <textarea id="message" name="user_message" limit="250"></textarea><br>
 
+        </fieldset>
           <button type="submit">Send Now!</button>
       </form>
-        <p><a src="index.html"></a>Back to Resume</p>
+        
     </body>
 </html>
